@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Touch Nums</title>
+</head>
+<body onload="onInitGame()">
+    <div class="win-status hidden">
+        <h1 class="win-msg">VICTORIOUS</h1>
+        <button class="btn" onclick="renderBoard(EASY)">Restart Game?</button>
+    </div>
+    <button class="btn" onclick = "renderBoard(EASY)">EASY - 16</button>
+    <button class="btn" onclick = "renderBoard(MEDIUM)">MEDIUM - 25</button>
+    <button class="btn" onclick = "renderBoard(HARD)">HARD - 36</button>
+    <h3 class="timer">0.000</h3>
+    <table>
+        <tbody class="board">
+        </tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
